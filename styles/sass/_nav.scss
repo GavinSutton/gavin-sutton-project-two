@@ -1,0 +1,79 @@
+.active {
+    text-decoration: line-through;
+    &::before, 
+    &::after {
+        content: "\00a0";
+    }
+}
+
+nav {
+    padding-top: 20px;
+}
+
+nav ul {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    padding: 10px 2px;
+}
+
+nav ul i {
+    font-size: 1rem;
+}
+
+.title {
+    font-weight: 800;
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.home-page h1,
+.blog h2,
+.contact h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hamburger {
+    position: relative;
+    text-align: center;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.hamburger h1,
+.hamburger h2, 
+.fa-bars {
+    display: none;
+}
+
+.hamburger h1,
+.hamburger h2 {
+    padding-top: 15px;
+}
+
+
+
+@media (max-width: 770px) {
+        nav {
+            display: none;
+        }
+
+        .hamburger h1,
+        .hamburger h2, 
+        .fa-bars {
+            display: inline-block;
+        }
+}

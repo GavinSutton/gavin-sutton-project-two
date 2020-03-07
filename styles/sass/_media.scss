@@ -1,0 +1,144 @@
+@media (max-width: 1200px) {
+    .home-page {
+
+        .advantages-content .empty {
+            flex: 1 0 30%;
+        }
+
+        .advantages-content ul {
+            flex: 1 0 70%;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .home-page {
+
+        .white-content p {
+            width: 70%;
+        }
+
+        .advantages-content .empty {
+            flex: 1 0 10%;
+        }
+
+        .advantages-content ul {
+            flex: 1 0 90%;
+        }
+
+        .drop-us-a-line {
+            height: auto;
+        }
+        
+        .drop-green {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .drop-image {
+            display: none;
+            width: 0%;
+        }
+    }
+}
+
+
+@media (max-width: 770px) {
+    .home-page {
+
+        .branding-content {
+            padding: 40px 0;
+        }
+
+        .branding-content h2 {
+            display: inline-block;
+        }
+
+        .branding-content img[src="creative-assets/home-circle-text.png"] {
+            display: none;
+        }
+
+        .branding-content ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .branding-content li {
+            width: 100%;
+            margin: 20px;
+        }
+
+        .white-content img {
+            width: 50%;
+        }
+
+        .white-content p {
+            width: 90%;
+        }
+        
+        .advantages-content .empty {
+            flex: 1 0 0%;
+        }
+
+        .advantages-content ul {
+            flex: 1 0 100%;
+        }
+
+        .team-players {
+            grid-column-start: auto;
+        }
+        
+        .team-players div {
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 560px) {
+    .home-page {
+
+        header {
+            height: 70vh;
+        }
+
+        .branding-content h2 {
+            font-size: 1.2rem;
+            padding: 0 0 20px 0;
+        }
+
+        .branding-picture-container {
+            text-align: center;
+        }
+
+        .branding-content img[src="creative-assets/home-2.jpeg"] {
+            width: 100%;
+        }
+
+        .branding-content ul {
+            padding-top: 20px;
+        }
+
+        .advantages-content ul {
+            flex-direction: column;
+        }
+
+        .advantages-content li {
+            width: 100%;
+            margin: 15px 10px 15px 0;
+        }
+
+        .team-content h2 {
+            text-align: center;
+            padding: 50px 0;
+        }
+    }
+}
+
+
+// @media (max-width: 400px) {
+//     .home-page {
+        
+//     }
+// }

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/7aa5d1a72c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
-<body>
+<body class="home-page">
 <a href="#maincontent" class="skip-link">Skip to main content.</a>
 <header>    
     <div class="wrapper hamburger">
@@ -31,8 +31,8 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="visuallyHidden">Creative</h1>
-        <i class="fas fa-bars visuallyHidden"></i>
+        <h1>Creative</h1>
+        <i class="fas fa-bars"></i>
     </div>
     <!-- put align-items: center on the UL -->
 
@@ -47,9 +47,10 @@
 <!-- GREEN SECTION -->
     <section class="branding-section">
         <div class="wrapper branding-content">
+            <h2>Branding and Website Pros</h2>
             <div class="branding-picture-container">
-                <img src="creative-assets/home-2.jpeg" alt="">
-                <img src="creative-assets/home-circle-text.png" alt="" class="circle-text">
+                <img src="creative-assets/home-2.jpeg" alt="A desk with a calendar, a computer, inscense, and a lovely plant">
+                <img src="creative-assets/home-circle-text.png" alt="Branding and Content Pros" class="circle-text">
             </div>
             <ul>
                 <li>
@@ -80,44 +81,59 @@
     <section class="advantages-section">
         <div class="wrapper advantages-content">
             <div class="empty"></div>
+
+<!-- so for the icons, put a square box around with a border and just make it a circle -->
+
             <ul>
                 <li>
-                    <i class="fas fa-magic"></i>
+                    <div class="icon-container"> 
+                        <i class="fas fa-magic"></i>
+                    </div>
                     <div>
                         <h3>Unique Design</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam vitae eveniet facilis officia sapiente.</p>
                     </div>
                 </li>
                 <li>
-                    <i class="fas fa-map-pin"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
                     <div>
                         <h3>SEO Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam vitae eveniet facilis officia sapiente.</p>
                     </div>
                 </li>
                 <li>
-                    <i class="fas fa-desktop"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-desktop"></i>
+                    </div>
                     <div>
                         <h3>Retina Ready</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam vitae eveniet facilis officia sapiente.</p>
                     </div>
                 </li>
                 <li>
-                    <i class="fas fa-shopping-bag"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
                     <div>
                         <h3>Ecommerce Ready</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam vitae eveniet facilis officia sapiente.</p>
                     </div>
                 </li>
                 <li>
-                    <i class="fas fa-sliders-h"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
                     <div>
                         <h3>Advanced Options</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam vitae eveniet facilis officia sapiente.</p>
                     </div>
                 </li>
                 <li>
-                    <i class="far fa-smile"></i>
+                    <div class="icon-container">
+                        <i class="far fa-smile"></i>
+                    </div>
                     <div>
                         <h3>Customizable</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam vitae eveniet facilis officia sapiente.</p>
@@ -134,8 +150,10 @@
             <h2>Meet our Team</h2>
             <ul class="the-team">
                 <li class="team-players">
-                    <h2>Team Players</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur libero deserunt sint vel asperiores velit, iure dolorum voluptates, ex, aliquid architecto?</p>
+                    <div>
+                        <h4>Team Players</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur libero deserunt sint vel asperiores velit, iure dolorum voluptates, ex, aliquid architecto?</p>
+                    </div>
                 </li>
                 <li class="team-member">
                     <img src="creative-assets/home-5.jpeg" alt="">
@@ -152,7 +170,7 @@
                 <li class="team-member">
                     <img src="creative-assets/home-9.jpeg" alt="">
                 </li>
-                <li class="work-with-us"></li>
+                <li class="team-member work-with-us"><h4>Want to work with us!</h4></li>
             </ul>
         </div>
     </section>
@@ -174,7 +192,7 @@
 <footer>
     <section class="wrapper footer">
         <div class="contact-us">
-            <h3>Contact Us</h3>
+            <h4>Contact Us</h4>
             <ul>
                 <li>6591 Orchard Street, Toronto, Ontario</li>
                 <li>Email: contact@creative.com</li>
@@ -190,7 +208,7 @@
             <p class="sr-only">Instagram</p>
         </div>
         <div class="recent-posts">
-            <h3>Recent Posts</h3>
+            <h4>Recent Posts</h4>
             <ul>
                 <li>Conversion hackathon partner</li>
                 <li>Network channels entrepreneur</li>
@@ -200,20 +218,19 @@
             </ul>
         </div>
         <div class="subscribe-now">
-            <h3>Subscribe Now</h3>
-            <p>Signup fr emails and notifucations below</p>
+            <h4>Subscribe Now</h4>
+            <p>Signup for emails and notifucations below</p>
             <form action="" class="clearfix">
                 <label for="email" class="sr-only">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email">
                 <input type="button">
+                <i class="fas fa-long-arrow-alt-right"></i>
             </form>
         </div>
     </section>
-
     <section class="creative-agency">
         <h4>Creative Agency</h4>
     </section>
-
 </footer>
 
 
