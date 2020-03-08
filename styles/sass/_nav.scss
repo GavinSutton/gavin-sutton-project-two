@@ -22,6 +22,11 @@ nav ul a {
     padding: 10px 2px;
 }
 
+nav ul a:hover {
+    border-bottom: 1px solid $underline;
+    transition: 1s;
+}
+
 nav ul i {
     font-size: 1rem;
 }
@@ -41,26 +46,26 @@ nav ul i {
     text-align: center;
 }
 
-.hamburger {
+.mobile-nav {
     position: relative;
     text-align: center;
 }
 
 .fa-bars {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     position: absolute;
     right: 15px;
     top: 15px;
 }
 
-.hamburger h1,
-.hamburger h2, 
+.mobile-nav h1,
+.mobile-nav h2, 
 .fa-bars {
     display: none;
 }
 
-.hamburger h1,
-.hamburger h2 {
+.mobile-nav h1,
+.mobile-nav h2 {
     padding-top: 15px;
 }
 
@@ -71,8 +76,8 @@ nav ul i {
             display: none;
         }
 
-        .hamburger h1,
-        .hamburger h2, 
+        .mobile-nav h1,
+        .mobile-nav h2, 
         .fa-bars {
             display: inline-block;
         }

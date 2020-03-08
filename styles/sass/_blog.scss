@@ -3,7 +3,7 @@
     header {
         background: url(../creative-assets/blog-1.jpeg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         height: 100vh;
     }
@@ -21,14 +21,14 @@
         margin-bottom: 20px;;
     }
 
-    main p {
-        font-size: 0.9rem;
-        color: rgba(78, 73, 73, 0.801);
-    }
+    // main p {
+    //     font-size: 0.9rem;
+    //     color: rgba(78, 73, 73, 0.801);
+    // }
 
     span {
         font-weight: bold;
-        color: black;
+        color: $black;
     }
 
     .blog-author ul {
@@ -45,13 +45,14 @@
     }
 
     .author img[src="creative-assets/blog-2.jpeg"] {
-        border-radius: 50%;
         margin-right: 20px;
+        border-radius: 50%;
     }
+
 
     .blog-content {
         padding: 40px 0;
-        border-top: 1px #333333 solid;
+        border-top: 1px solid $underline;
     }
 
     .blog-content p {
@@ -73,14 +74,24 @@
         font-size: 1.4rem;
         font-weight: 700;
         padding-bottom: 50px;
-        border-bottom: 1px solid rgba(78, 73, 73, 0.801);
+        border-bottom: 1px solid $underline;
     }
+
+    .related-post-image-container img {
+        width: 100%;
+    }
+
 
     .related-posts {
         display: flex;
         justify-content: space-between;
         margin: 50px 0;
     }
+
+    .related-posts li:nth-child(2) {
+        margin: 0 10px;
+    }
+
 
     .related-posts p {
         margin-top: 20px;
@@ -99,7 +110,7 @@
     }
 
     .comment {
-        background: #F6F6F6;
+        background: $lightGrey;
         width: 100%;
     }
 
@@ -118,12 +129,47 @@
         margin: 10px 0;
         padding: 10px 20px;
     }
-
-
-
     // Comments section styles end
 
+    // Leave a comment section styles start
 
+    .leave-comment-section {
+        margin: 50px 0 150px;
+    }
+
+    .leave-comment-section input, 
+    .leave-comment-section textarea {
+        border: none;
+        border-bottom: 1px solid $underline;
+        margin: 30px 0;
+        padding: 0 0 20px 0;
+    }
+
+    .leave-comment-section input:hover,
+    .leave-comment-section textarea:hover {
+        border-bottom: 1px solid $black;
+    }
+
+    .leave-comment-section input[id="name"],
+    .leave-comment-section input[id="subject"]{
+        width: calc(33% - 2px);
+    }
+
+    .leave-comment-section input[id="email"] {
+        margin: 0 10px;
+        width: calc(33% - 20px);
+    }
+
+    .leave-comment-area textarea {
+        width: 100%;
+        resize: none;
+        font-family: inherit;
+    }
+
+    input[value="SUBMIT COMMENT"] {
+        background: none;
+        padding: 0 0 20px 0;
+    }
 }
 
 
@@ -138,11 +184,27 @@
 //     }
 // }
 
-// @media (max-width: 970px) {
-//     .blog {
+@media (max-width: 970px) {
+    .blog {
 
-//     }
-// }
+        header {
+            height: 90vh;
+        }
+
+        .leave-comment-section input[id="name"]{
+            width: calc(50% - 10px);
+        }
+
+        .leave-comment-section input[id="subject"]{
+            width: 100%;
+        }
+
+        .leave-comment-section input[id="email"] {
+            margin: 0 0 0 10px;
+            width: calc(50% - 10px);
+        }
+    }
+}
 
 
 @media (max-width: 770px) {
@@ -150,19 +212,72 @@
         header {
             height: 70vh;
         }
+
+        .blog-author ul {
+            flex-wrap: wrap;
+        }
+
+        .blog-author li {
+            width: 50%;
+        }
+
+        .author img[src="creative-assets/blog-2.jpeg"] {
+            display: none;
+        }
     }
 }
 
 
-// @media (max-width: 560px) {
-//     .blog {
-    
-//     }
-// }
+@media (max-width: 560px) {
+    .blog {
+
+        header {
+            height: 50vh;
+        }
+
+        .blog-author li {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .related-posts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .related-posts li {
+            margin: 20px 0;
+        }
+
+        .comments img {
+            display: none;
+        }
+
+        .leave-comment-section input[id="name"]{
+            width: 100%;
+        }
+
+        .leave-comment-section input[id="email"] {
+            margin: 0;
+            width: 100%;
+        }
+
+        .leave-comment-section {
+            margin: 50px 0 50px;
+        }
+    }
+}
 
 
-// @media (max-width: 400px) {
-//     .home-page {
-        
-//     }
-// }
+@media (max-width: 400px) {
+    .blog {
+        h2 {
+            position: relative;
+            top: 150px;
+            color: white;
+        }
+    }
+}

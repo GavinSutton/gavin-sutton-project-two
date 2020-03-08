@@ -1,3 +1,219 @@
-// .contact-page {
+.contact-page {
 
-// }
+    // GENERAL STYLES START
+
+    p {
+        margin: 10px 0;
+    }
+
+    // GENERAL STYLES END
+
+    // HEADER STYLES START
+    nav {
+        background: $white;
+        padding: 40px 0;
+    }
+
+    .bottom-header-image {
+        background: url(../creative-assets/contact-1.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 168px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        width: 20%;
+        position: relative;
+        top: -50px;
+    }
+    // HEADER STYLES END
+
+
+    // CONTACT DETAILS START
+
+    .contact-details {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px 0;
+    }
+
+    .contact-details > li {
+        padding: 0 50px;
+    }
+
+    .contact-details i {
+        font-size: 2.5rem;
+        margin: 20px 0;
+    }
+
+    .contact-details h4 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+    }    
+
+    .contact-address {
+        border-right: 1px solid $underline;
+        border-left: 1px solid $underline;
+    }
+
+    // CONTACT DETAILS END 
+
+    // GET IN TOUCH START
+    .get-in-touch {
+        margin: 50px 0 80px;
+    }
+
+    .get-in-touch input, 
+    .get-in-touch textarea {
+        border: none;
+        border-bottom: 1px solid $underline;
+        margin: 30px 0;
+        padding: 0 0 20px 0;
+    }
+
+    .get-in-touch input:hover,
+    .get-in-touch textarea:hover {
+        border-bottom: 1px solid $black;
+    }
+
+    .get-in-touch input[id="name"],
+    .get-in-touch input[id="subject"]{
+        width: calc(33% - 2px);
+    }
+
+    .get-in-touch input[id="email"] {
+        margin: 0 10px;
+        width: calc(33% - 20px);
+    }
+
+    .leave-message-area textarea {
+        width: 100%;
+        resize: none;
+        font-family: inherit;
+    }
+
+    input[value="SEND MESSAGE"] {
+        font-size: 1.1rem;
+        background: none;
+        padding: 0 0 10px 0;
+    }
+    // GET IN TOUCH END
+
+
+
+    // PRE FOOTER IMAGE START
+
+    .pre-footer-image {
+        background: url(../creative-assets/contact-2.jpeg);
+        background-size: cover;
+        height: 60vh;
+    }
+
+    // PRE FOOTER IMAGE END
+}
+
+
+@media (max-width: 1200px) {
+    .contact-page {
+        .pre-footer-image {
+            height: 50vh;
+        }
+    }
+}
+
+
+
+@media (max-width: 970px) {
+    .contact-page {
+
+        .get-in-touch input[id="name"]{
+            width: calc(50% - 10px);
+        }
+
+        .get-in-touch input[id="subject"]{
+            width: 100%;
+        }
+
+        .get-in-touch input[id="email"] {
+            margin: 0 0 0 10px;
+            width: calc(50% - 10px);
+        }
+
+        .pre-footer-image {
+            height: 40vh;
+        }
+
+    }
+}
+
+
+@media (max-width: 770px) {
+    .contact-page {
+
+        .mobile-nav {
+            padding: 20px 0;
+        }
+
+        .fa-bars {
+            top: 30px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .contact-address {
+            border-right: none;
+            border-left: none;
+        }
+
+        .pre-footer-image {
+            height: 25vh;
+        }
+    }
+}
+
+
+@media (max-width: 560px) {
+    .contact-page {
+
+        .get-in-touch input[id="name"]{
+            width: 100%;
+        }
+
+        .get-in-touch input[id="email"] {
+            margin: 0;
+            width: 100%;
+        }
+
+        .get-in-touch {
+            margin: 50px 0 50px;
+        }
+
+        .pre-footer-image {
+            height: 20vh;
+        }
+        
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contact-page {
+
+        .pre-footer-image {
+            height: 15vh;
+        }
+        
+    }
+}

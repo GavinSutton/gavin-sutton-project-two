@@ -1,3 +1,13 @@
+$primaryColor: #C3DAB7;
+// $secondaryColor:;
+// $thirdColor:
+$white: #FFFFFF;
+$black: #333333;
+$lightGrey: #F6F6F6;
+$underline: #e2e2e2;
+$paragraphColor: #4e4949cc;
+
+
 @mixin fontSize($sizeValue) {
   font-size: $sizeValue * 1px;
   font-size: ($sizeValue/10) * 1rem;

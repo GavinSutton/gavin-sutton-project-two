@@ -14,15 +14,18 @@
 <body class="blog">
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header>  
-        <div class="wrapper hamburger">
+
+
+        <!-- NAV START -->
+        <div class="wrapper mobile-nav">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="" class="active">Blog</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li class="title">Creative</li>
                     <li><a href="">Shop</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li>
                         <a href=""><i class="fas fa-search"></i></a>
                         <p class="sr-only">Search</p>
@@ -36,8 +39,13 @@
             <h2>Creative</h2>
             <i class="fas fa-bars"></i>
         </div>
+        <!-- NAV END -->
+
+
     </header>
     <main id="maincontent">
+
+
         <!-- BLOG POST START -->
         <section>
             <div class="wrapper">
@@ -94,31 +102,30 @@
         <!-- BLOG POST END -->
 
 
-
         <!-- RELATED POST START -->
         <section>
             <div class="wrapper">
                 <h3>Realted Posts</h3>
                 <ul class="related-posts">
                     <li>
-                        <div>
-                            <img src="creative-assets/blog-3.jpeg" alt="">
+                        <div class="related-post-image-container">
+                            <a href=""><img src="creative-assets/blog-3.jpeg" alt=""></a>
                         </div>
                         <div>
                             <p>July, 25, 2018</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <img src="creative-assets/blog-4.jpeg" alt="">
+                        <div class="related-post-image-container">
+                            <a href=""><img src="creative-assets/blog-4.jpeg" alt=""></a>
                         </div>
                         <div>
                             <p>July, 26, 2018 </p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <img src="creative-assets/blog-5.jpeg" alt="">
+                        <div class="related-post-image-container">
+                            <a href=""><img src="creative-assets/blog-5.jpeg" alt=""></a>
                         </div>
                         <div>
                             <p>July, 28, 2018</p>
@@ -129,7 +136,6 @@
             </div>
         </section>
         <!-- RELATED POST END -->
-
 
 
         <!-- COMMENTS START -->
@@ -145,7 +151,7 @@
                             <h5>Daniel Vandaft</h5>
                             <p> - Reply</p>
                             <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding</p>
-                            <p>Jul 17, 2015 at 15hours ago</p>
+                            <p>Jul 17, 2015 at 15 hours ago</p>
                         </div>
                     </div>
                     <div class="comments">
@@ -165,15 +171,38 @@
         <!-- COMMENTS END -->
 
 
-
         <!-- LEAVE A COMMENT START -->
         <section>
-            
+            <div class="wrapper">
+                <h3>Leave a comment</h3>
+                <form action="" class="leave-comment-section">
+                    <fieldset class="name-email-subject">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name...">
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="youremail@domain.com">
+
+                        <label for="subject" class="sr-only">Subject (optional)</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                    </fieldset>
+
+                    <fieldset class="leave-comment-area">
+                        <label for="comments" class="sr-only">Here goes your comment</label>
+                        <textarea name="comments" id="comments" placeholder="Here goes your comment" rows="10"></textarea>
+                    </fieldset>
+
+                    <input type="button" value="SUBMIT COMMENT">
+
+
+                </form>
+
+            </div>
         </section>
         <!-- LEAVE A COMMENT END -->
     </main>
 
-
+    <!-- FOOTER START -->
     <footer>
         <section class="wrapper footer">
             <div class="contact-us">
@@ -217,9 +246,7 @@
             <h4>Creative Agency</h4>
         </section>
     </footer>
-    
+    <!-- FOOTER END -->
 
-
-    
 </body>
 </html>
