@@ -1,3 +1,4 @@
+// NAV STYLES START
 .active {
     text-decoration: line-through;
     &::before, 
@@ -20,11 +21,10 @@ nav ul {
 
 nav ul a {
     padding: 10px 2px;
-}
-
-nav ul a:hover {
-    border-bottom: 1px solid $underline;
-    transition: 1s;
+    &:hover {
+        border-bottom: 1px solid $underline;
+        transition: 1s;
+    }
 }
 
 nav ul i {
@@ -32,10 +32,10 @@ nav ul i {
 }
 
 .title {
-    font-weight: 800;
-    flex-basis: 50%;
-    text-align: center;
     font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    flex-basis: 50%;
 }
 
 .home-page h1,
@@ -47,8 +47,8 @@ nav ul i {
 }
 
 .mobile-nav {
-    position: relative;
     text-align: center;
+    position: relative;
 }
 
 .fa-bars {
@@ -68,9 +68,10 @@ nav ul i {
 .mobile-nav h2 {
     padding-top: 15px;
 }
+// NAV STYLES END
 
 
-
+// NAV MEDIA QUERIES START
 @media (max-width: 770px) {
         nav {
             display: none;
@@ -82,3 +83,4 @@ nav ul i {
             display: inline-block;
         }
 }
+// NAV MEDIA QUERIES END

@@ -1,16 +1,16 @@
 .blog {
-    // Header styles start
+
+
+    // HEADER STYLES START
     header {
-        background: url(../creative-assets/blog-1.jpeg);
+        background: url(../creative-assets/blog-1.jpeg) top no-repeat;
         background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
         height: 100vh;
     }
-    // Header styles end
+    // HEADER STYLES END
 
-    // Blog Post styles start
 
+    // BLOG POST STYLES START
     .blog-title {
         margin: 100px 0;
     }
@@ -20,11 +20,6 @@
         font-weight: 700;
         margin-bottom: 20px;;
     }
-
-    // main p {
-    //     font-size: 0.9rem;
-    //     color: rgba(78, 73, 73, 0.801);
-    // }
 
     span {
         font-weight: bold;
@@ -49,7 +44,6 @@
         border-radius: 50%;
     }
 
-
     .blog-content {
         padding: 40px 0;
         border-top: 1px solid $underline;
@@ -66,9 +60,10 @@
     .blog-content i {
         padding: 10px;
     }
-    // Blog Post styles end
+    // BLOG POST STYLES END
 
-    //  Related Posts styles start
+
+    //  RELATED POST STYLES START
 
     h3 {
         font-size: 1.4rem;
@@ -81,7 +76,6 @@
         width: 100%;
     }
 
-
     .related-posts {
         display: flex;
         justify-content: space-between;
@@ -92,14 +86,13 @@
         margin: 0 10px;
     }
 
-
     .related-posts p {
         margin-top: 20px;
     }
-    // Related Posts styles end
+    // RELATED POST STYLES END
 
 
-    // Comments section styles start
+    // COMMENTS SECTION STYLE START
     .comments {
         display: flex;
         margin: 50px 0;
@@ -126,13 +119,12 @@
     }
 
     .comment p {
-        margin: 10px 0;
         padding: 10px 20px;
     }
-    // Comments section styles end
+    // COMMENTS SECTION STYLE END
 
-    // Leave a comment section styles start
 
+    // LEAVE A COMMENT SECTION STYLES START
     .leave-comment-section {
         margin: 50px 0 150px;
     }
@@ -170,20 +162,11 @@
         background: none;
         padding: 0 0 20px 0;
     }
+// LEAVE A COMMENT SECTION STYLE ENDS
 }
 
 
-
-
-
-
-
-// @media (max-width: 1200px) {
-//     .blog {
-
-//     }
-// }
-
+// BLOG MEDIA QUERIES START
 @media (max-width: 970px) {
     .blog {
 
@@ -203,12 +186,14 @@
             margin: 0 0 0 10px;
             width: calc(50% - 10px);
         }
+
     }
 }
 
 
 @media (max-width: 770px) {
     .blog {
+
         header {
             height: 70vh;
         }
@@ -224,6 +209,7 @@
         .author img[src="creative-assets/blog-2.jpeg"] {
             display: none;
         }
+
     }
 }
 
@@ -241,10 +227,8 @@
         }
 
         .related-posts {
-            display: flex;
+            @include flex-centered();
             flex-direction: column;
-            align-items: center;
-            text-align: center;
             margin: 50px 0;
         }
 
@@ -268,16 +252,20 @@
         .leave-comment-section {
             margin: 50px 0 50px;
         }
+
     }
 }
 
 
 @media (max-width: 400px) {
     .blog {
+
         h2 {
             position: relative;
             top: 150px;
-            color: white;
+            color: $white;
         }
+
     }
 }
+// BLOG MEDIA QUERIES END

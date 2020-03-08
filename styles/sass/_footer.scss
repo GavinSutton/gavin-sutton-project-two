@@ -1,10 +1,10 @@
+// FOOTER STYLES START
 footer {
-        background-color: #333333;
-        color: #FFFFFF;
+        background: $black;
+        color: $white;
     }
 
     .footer {
-        // height: 600px;
         padding: 100px 0;
         display: flex;
         justify-content: space-between;
@@ -28,6 +28,10 @@ footer {
 
     .footer li {
         padding: 2px 0;
+    }
+
+    .footer p {
+        color: $white;
     }
 
     .recent-posts li {
@@ -56,48 +60,45 @@ footer {
     }
 
     .footer input {
-        height: 40px;
-        width: calc(90% - 40px);
-        padding: 10px;
         font-size: 0.7rem;
-        /* float: right; */
+        width: calc(90% - 40px);
+        height: 40px;
+        padding: 10px;
     }
 
     .footer input[type=button] {
-        float: right;
+        background: $primaryColor;
         width: 40px;
-        background: #C3DAB7;
+        float: right;
     }
 
     .fa-long-arrow-alt-right {
-        color: black;
+        font-size: 1.5rem;
+        color: $black;
         position: absolute;
         top: 9px;
         right: 10px;
-        font-size: 1.5rem;
     }
 
     .creative-agency {
-        padding: 20px;
         text-align: center;
+        padding: 20px;
         border-top: 1px solid $underline;
     }
+// FOOTER STYLES END
 
 
 
 
-// @media (max-width: 1200px) {
-
-// }
-
+// FOOTER MEDIA QUERIES START
 @media (max-width: 970px) {
     .footer {
         padding: 70px 0;
     }
 
     .footer h4, .footer p, .footer ul {
-        padding-bottom: 10px;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .footer h4 {
@@ -110,15 +111,15 @@ footer {
     }
 
     .footer input {
-        height: 60px;
-        width: calc(90% - 150px);
         font-size: 1.4rem;
+        width: calc(90% - 150px);
+        height: 60px;
     }
 
     .footer input[type="button"] {
-        float: none;
         width: 150px;
         height: 60px;
+        float: none;
     }
 
     .fa-long-arrow-alt-right {
@@ -172,8 +173,8 @@ footer {
     }
 
     .footer input {
-        width: calc(90% - 80px);
         font-size: 0.9rem;
+        width: calc(90% - 80px);
     }
 
     .footer input[type="button"] {
@@ -184,3 +185,4 @@ footer {
         right: 43px;
     }
 }
+// FOOTER MEDIA QUERIES END

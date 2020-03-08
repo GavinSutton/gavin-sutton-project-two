@@ -1,12 +1,10 @@
 * {
-    // border: 1px red solid;
     transition: 0.4s;
 }
 
-
 body {
     font-size: 125%;
-    color: #333333;
+    color: $black;
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -14,7 +12,10 @@ body {
 
 p {
     color: $paragraphColor;
-    font-size: 0.9rem;;
+    font-size: 0.9rem;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin: 10px 0;
 }
 
 h1, 
@@ -43,15 +44,8 @@ a {
     text-decoration: none;
 }
 
-.home-page .wrapper {
+.wrapper {
     max-width: 1280px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.blog .wrapper, 
-.contact-page .wrapper {
-    max-width: 1280px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }

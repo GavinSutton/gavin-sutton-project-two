@@ -1,12 +1,5 @@
 .contact-page {
 
-    // GENERAL STYLES START
-
-    p {
-        margin: 10px 0;
-    }
-
-    // GENERAL STYLES END
 
     // HEADER STYLES START
     nav {
@@ -15,10 +8,8 @@
     }
 
     .bottom-header-image {
-        background: url(../creative-assets/contact-1.jpeg);
+        background: url(../creative-assets/contact-1.jpeg) left no-repeat;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left;
         height: 168px;
     }
 
@@ -63,6 +54,7 @@
 
     // CONTACT DETAILS END 
 
+
     // GET IN TOUCH START
     .get-in-touch {
         margin: 50px 0 80px;
@@ -105,24 +97,24 @@
     // GET IN TOUCH END
 
 
-
     // PRE FOOTER IMAGE START
-
     .pre-footer-image {
         background: url(../creative-assets/contact-2.jpeg);
         background-size: cover;
-        height: 60vh;
+        height: 70vh;
     }
-
     // PRE FOOTER IMAGE END
 }
 
 
+// CONTACT-PAGE MEDIA QUERIES START
 @media (max-width: 1200px) {
     .contact-page {
+
         .pre-footer-image {
             height: 50vh;
         }
+
     }
 }
 
@@ -164,10 +156,8 @@
         }
 
         .contact-details {
-            display: flex;
+            @include flex-centered();
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
             margin: 50px 0;
         }
@@ -180,6 +170,7 @@
         .pre-footer-image {
             height: 25vh;
         }
+
     }
 }
 
@@ -203,7 +194,7 @@
         .pre-footer-image {
             height: 20vh;
         }
-        
+
     }
 }
 
@@ -214,6 +205,7 @@
         .pre-footer-image {
             height: 15vh;
         }
-        
+
     }
 }
+// CONTACT-PAGE MEDIA QUERIES END

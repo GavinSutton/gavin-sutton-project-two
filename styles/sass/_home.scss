@@ -3,22 +3,14 @@
 
     /* HEADER STYLES START */
     header {
-        background: url(../creative-assets/home-1.jpeg);
+        background: url(../creative-assets/home-1.jpeg) center no-repeat;
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         height: 100vh;
     }
     /* HEADER STYLES END */
 
 
     /* MAIN STYLES START */
-    p {
-        font-size: 0.8rem;
-        line-height: 24px;
-        letter-spacing: 0.3px;
-    }
-
     h3 {
         font-size: 1rem;
         padding: 10px 0;
@@ -35,28 +27,26 @@
     }
 
     .branding-section {
-        background-color: #C3DAB7;
+        background: $primaryColor;
         display: flex;
     }
 
     .branding-content {
-        display: flex;
+        @include flex-centered();
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 150px 0;
     }
 
     .branding-content ul {
-        display: flex;
         width: 80%;
+        display: flex;
         justify-content: space-evenly;
         padding-top: 50px;
     }
 
     .branding-content li {
-        text-align: center;
         width: 35%;
+        text-align: center;
     }
 
     .branding-picture-container {
@@ -64,34 +54,32 @@
     }
 
     .circle-text {
+        width: 50%;
         position: absolute;
         left: -25%;
         top: -25%;
-        width: 50%;
     }
     /* RANDING STYLES END */
 
 
     /* WHITE SECTION CIRCLE IMAGE START */
     .white-section {
-        background-color: #F6F6F6;
+        background: $lightGrey;
         display: flex;
     }
 
     .white-content {
-        display: flex;
+        @include flex-centered();
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         position: relative;
         padding: 40px 0;
     }
 
     .white-content img {
-        border-radius: 50%;
         width: 25%;
         padding: 25px 0;
+        border-radius: 50%;
     }
 
     .white-content p {
@@ -115,12 +103,9 @@
 
     /* ADVANTAGES START */
     .advantages-section {
-        background: url(../creative-assets/home-4.jpeg);
-        background-position: right;
+        background: url(../creative-assets/home-4.jpeg) right no-repeat;
         background-size: cover;
-        background-repeat: none;
         display: flex;
-        transition: 1s;
     }
 
     .advantages-content {
@@ -133,13 +118,11 @@
     .advantages-content .empty {
         display: flex;
         flex: 1 0 45%;
-        transition: 0.5s;
     }
 
     .advantages-content ul {
         display: flex;
         flex: 1 0 55%;
-        transition: 0.5s;
     }
 
     .advantages-content ul {
@@ -155,30 +138,27 @@
 
     .advantages-content i {
         font-size: 1.5rem;
-        padding: 10px 40px;
         width: inherit;
+        padding: 10px 40px;
         position: relative;
         top: 6px;
         right: 24px;
-        // display: block;
-        // position: absolute;
     }
 
     .icon-container {
-        height: 60px;
         width: 60px;
-        border: 2px black solid;
+        height: 60px;
         border-radius: 50%;
         position: relative;
         margin-right: 10px;
+        border: 2px solid $black;
     }
     /* ADVANTAGES END */
 
 
     /* TEAM START */
     .team-section {
-        background-color: #FFFFFF;
-        // height: 100vh;
+        background: $white;
         height: auto;
     }
 
@@ -189,7 +169,6 @@
 
     .the-team {
         display: grid;
-        // grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
         grid-template-rows: 300px 300px;
         grid-gap: 20px;
@@ -198,21 +177,21 @@
     }
     
     .the-team img {
-        height: 100%;
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
     .team-players {
-        grid-column-start: span 2;
-        background: #F6F6F6;
+        background: $lightGrey;
         display: flex;
+        grid-column-start: span 2;
     }
 
     .team-players div {
-        margin: 130px auto 0;
         width: 90%;
         text-align: left;
+        margin: 130px auto 0;
     }
 
     .team-players h4 {
@@ -220,7 +199,7 @@
     }
 
     .work-with-us {
-        background: #F6F6F6;
+        background: $lightGrey;
         text-align: center;
         display: flex;
     }
@@ -239,12 +218,10 @@
     }
 
     .drop-green {
-        background-color: #C3DAB7;
-        height: 100vh;
+        background: $primaryColor;
         width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100vh;
+        @include flex-centered();
     }
 
     .drop-contents {
@@ -259,7 +236,7 @@
 
     .drop-contents a {
         padding: 15px 35px;
-        background-color: #FFFFFF;
+        background-color: $white;
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.7px;
@@ -268,18 +245,16 @@
     }
 
     .drop-image {
-        background: url(../creative-assets/home-10.jpeg);
-        background-position: center;
+        background: url(../creative-assets/home-10.jpeg) center;
         background-size: cover;
-        height: 100vh;
         width: 50%;
+        height: 100vh;
     }
     /* DROP US A LINE END */
 }
 
 
-// MEDIA QUERIES START
-
+// HOME-PAGE MEDIA QUERIES START
 @media (max-width: 1200px) {
     .home-page {
 
@@ -292,6 +267,7 @@
         }
     }
 }
+
 
 @media (max-width: 970px) {
     .home-page {
@@ -321,6 +297,7 @@
             display: none;
             width: 0%;
         }
+
     }
 }
 
@@ -374,6 +351,7 @@
             margin: auto;
             text-align: center;
         }
+
     }
 }
 
@@ -415,12 +393,7 @@
             text-align: center;
             padding: 50px 0;
         }
+
     }
 }
-
-
-// @media (max-width: 400px) {
-//     .home-page {
-        
-//     }
-// }
+// HOME-PAGE MEDIA QUERIES END
